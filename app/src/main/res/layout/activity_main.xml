@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Grey"
+
+    tools:context=".MainActivity">
+
+
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Reset"
+        android:textColor="#ffffff"
+        android:id="@+id/reset"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/addwid"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimaryDark"/>
+
+    <HorizontalScrollView
+        android:layout_width="480dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/addwid"
+        android:layout_above="@+id/adView"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="520dp"
+        android:layout_height="20dp"
+        android:weightSum="100"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:background="@color/Grey"
+        android:id="@+id/top">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sunday"
+            android:id="@+id/sun"
+            android:textSize="12dp"
+            android:layout_weight="14.28"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Monday"
+            android:id="@+id/mon"
+            android:layout_weight="14.28"
+            android:textSize="12dp"
+            android:paddingTop="0dp"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tuesday"
+            android:id="@+id/tue"
+            android:layout_toRightOf="@+id/mon"
+            android:textSize="12dp"
+            android:layout_weight="14.28"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Wednesday"
+            android:id="@+id/wed"
+            android:textSize="12dp"
+            android:layout_weight="14.28"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Thursday"
+            android:id="@+id/thur"
+            android:textSize="12dp"
+            android:layout_weight="14.28"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Friday"
+            android:id="@+id/fri"
+            android:textSize="12dp"
+           android:layout_weight="14.28"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Saturday"
+            android:id="@+id/sat"
+            android:textSize="12dp"
+            android:layout_weight="14.28"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff" />
+
+
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/top"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:id="@+id/nos"
+                android:orientation="vertical"
+                android:background="@color/Grey">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="1"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffff" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="2"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffff" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="3"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffff" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="4"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffff" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="5"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffff" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="6"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffff" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="7"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffff" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="8"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="520dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/nos"
+                android:orientation="horizontal"
+                android:weightSum="100">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="14.28">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b49"
+                        android:textSize="10dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b50"
+                        android:textSize="10dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/b51"
+                        android:textSize="10dp"
+                        android:gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b52"
+                        android:textSize="10dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/b53"
+                        android:textSize="10dp"
+                        android:gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/b54"
+                        android:textSize="10dp"
+                        android:gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b55"
+                        android:textSize="10dp"
+                        android:gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:background="#ffffff" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b56"
+                        android:textSize="10dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/Grey">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="14.28">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/b1"
+                        android:textSize="10dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 2"
+                        android:id="@+id/b2"
+                        android:textSize="10dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 3"
+                        android:id="@+id/b3"
+                        android:textSize="10dp"
+                        android:background="#ffffff"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 4"
+                        android:id="@+id/b4"
+                        android:background="#ffffff"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:background="#ffffff"
+                        android:id="@+id/b5"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:background="#ffffff"
+                        android:id="@+id/b6"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:background="#ffffff"
+                        android:id="@+id/b7"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:background="#ffffff"
+                        android:id="@+id/b8"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/Grey">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="14.28">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b9"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b10"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b11"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b12"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b13"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b14"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b15"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b16"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/Grey">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="14.28">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b17"
+                        android:textSize="10dp"
+                        android:background="#ffffff"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b18"
+                        android:textSize="10dp"
+                        android:background="#ffffff"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b19"
+                        android:textSize="10dp"
+                        android:background="#ffffff"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b20"
+                        android:textSize="10dp"
+                        android:background="#ffffff"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b21"
+                        android:textSize="10dp"
+                        android:background="#ffffff"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b22"
+                        android:textSize="10dp"
+                        android:background="#ffffff"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b23"
+                        android:textSize="10dp"
+                        android:background="#ffffff"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b24"
+                        android:textSize="10dp"
+                        android:background="#ffffff"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/Grey">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="14.28">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b25"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b26"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b27"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b28"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b29"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b30"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b31"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b32"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/Grey">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="14.28">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b33"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b34"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b35"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b36"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b37"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b38"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b39"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b40"
+                        android:textSize="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/Grey">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="14.28">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b41"
+                        android:textSize="10dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b42"
+                        android:textSize="10dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/b43"
+                        android:textSize="10dp"
+                        android:gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b44"
+                        android:textSize="10dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/b45"
+                        android:textSize="10dp"
+                        android:gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/b46"
+                        android:textSize="10dp"
+                        android:gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b47"
+                        android:textSize="10dp"
+                        android:gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:background="#ffffff" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lecture 1"
+                        android:id="@+id/b48"
+                        android:textSize="10dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="#ffffff" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:text="Title"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/titleconfig"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:clickable="true"
+         />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="@string/ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</RelativeLayout>

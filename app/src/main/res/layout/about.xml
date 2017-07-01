@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingBottom="10dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/icon"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/img"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timetable Widget"
+                android:layout_below="@+id/img"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:id="@+id/moc"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/moc"
+                android:layout_centerHorizontal="true"
+                android:text="v 2.5"
+                android:textSize="18dp"
+                android:id="@+id/textView" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developed and Designed by: "
+                android:layout_marginTop="53dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:id="@+id/dvhead"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developer E-mail:  "
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:id="@+id/emailhead"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/name"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+
+                android:text="Ibrahim Broachwala"
+                android:id="@+id/name"
+                android:layout_below="@+id/dvhead"
+                android:textSize="15dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:text="calmchor.ib96@gmail.com"
+                android:layout_below="@+id/emailhead"
+                android:textIsSelectable="true"
+                android:textSize="15dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

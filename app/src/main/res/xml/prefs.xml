@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Settings">
+
+    <CheckBoxPreference
+        android:title="Include Weekends"
+        android:key="weekend_toggle"
+        android:checked="true"
+        android:defaultValue="true">
+
+    </CheckBoxPreference>
+    <ListPreference
+        android:title="Number of Columns in Widget"
+        android:entries="@array/columns"
+        android:entryValues="@array/values"
+        android:key="widget_columns"
+        android:summary="4"
+        />
+        <ListPreference
+            android:title="Widget Theme"
+            android:entries="@array/colors"
+            android:entryValues="@array/cvalues"
+            android:key="widget_theme"
+            android:summary="Blue"/>
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

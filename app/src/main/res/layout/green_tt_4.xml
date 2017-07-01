@@ -1,0 +1,473 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000"
+    android:padding="@dimen/widget_margin"
+    android:paddingTop="0dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:background="#78000000">
+
+        <TextView
+            android:id="@+id/appwidget_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="@string/appwidget_text"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:textStyle="bold|italic"
+            android:layout_alignBottom="@+id/bprev"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="&lt;"
+            android:id="@+id/bprev"
+            android:background="@color/green"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@id/bprev"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/bconfig"
+            android:background="@drawable/config"
+            />
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text=">"
+            android:id="@+id/bnext"
+            android:background="@color/green"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:id="@+id/title"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="13.5dp"
+            android:textStyle="bold"
+            android:textColor="@color/green" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="17.5dp"
+        android:id="@+id/head"
+        android:layout_below="@+id/relativeLayout"
+        android:orientation="horizontal"
+
+        android:weightSum="100"
+        android:background="#5f000000">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_weight="24.4"
+            android:text="Time"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:gravity="center_horizontal"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_weight="24.5"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:text="Subject"
+            android:gravity="center_horizontal"
+            android:textSize="12dp"
+            android:id="@+id/wcolumn1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_weight="25"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:text="Teacher"
+            android:gravity="center_horizontal"
+            android:textSize="12dp"
+            android:id="@+id/wcolumn2" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_weight="26.1"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:text="Room"
+            android:gravity="center_horizontal"
+            android:textSize="12dp"
+            android:id="@+id/wcolumn3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="100"
+            android:background="#28000000"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="24.4"
+                android:id="@+id/time1"
+                android:text="Time"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="24.5"
+                android:id="@+id/lecture1"
+                android:text="Sub"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:id="@+id/teacher1"
+                android:text="Teacher"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="26.1"
+                android:id="@+id/room1"
+                android:text="Room"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="100"
+            android:background="#63000000"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="24.4"
+                android:text="Time"
+                android:id="@+id/time2"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="24.5"
+                android:text="Sub"
+                android:id="@+id/lecture2"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:text="Teacher"
+                android:id="@+id/teacher2"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="26.1"
+                android:text="Room"
+                android:id="@+id/room2"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="100"
+
+            android:orientation="horizontal"
+            android:background="#28000000">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="24.4"
+                android:text="Time"
+                android:id="@+id/time3"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="24.5"
+                android:text="Sub"
+                android:id="@+id/lecture3"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:text="Teacher"
+                android:id="@+id/teacher3"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="26.1"
+                android:text="Room"
+                android:id="@+id/room3"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:background="#63000000">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="24.4"
+                android:text="Time"
+                android:id="@+id/time4"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="24.5"
+                android:text="Sub"
+                android:id="@+id/lecture4"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:text="Teacher"
+                android:id="@+id/teacher4"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="26.1"
+                android:text="Room"
+                android:id="@+id/room4"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:background="#28000000">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="24.4"
+                android:text="Time"
+                android:id="@+id/time5"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="24.5"
+                android:text="Sub"
+                android:id="@+id/lecture5"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:text="Teacher"
+                android:id="@+id/teacher5"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="26.1"
+                android:text="Room"
+                android:id="@+id/room5"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:background="#63000000">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="24.4"
+                android:text="Time"
+                android:id="@+id/time6"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="24.5"
+                android:text="Sub"
+                android:id="@+id/lecture6"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:text="Teacher"
+                android:id="@+id/teacher6"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="26.1"
+                android:text="Room"
+                android:id="@+id/room6"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:background="#28000000">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="24.4"
+                android:text="Time"
+                android:id="@+id/time7"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="24.5"
+                android:text="Sub"
+                android:id="@+id/lecture7"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:text="Teacher"
+                android:id="@+id/teacher7"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="26.1"
+                android:text="Room"
+                android:id="@+id/room7"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:background="#63000000">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="24.4"
+                android:text="Time"
+                android:id="@+id/time8"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="24.5"
+                android:text="Sub"
+                android:id="@+id/lecture8"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:text="Teacher"
+                android:id="@+id/teacher8"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="26.1"
+                android:text="Room"
+                android:id="@+id/room8"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="12.5dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

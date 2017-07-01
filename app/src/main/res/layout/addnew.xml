@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="6dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:background="#ffffff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+        android:layout_width="90dp"
+        android:layout_height="37.5dp"
+        android:text="Start time"
+        android:singleLine="true"
+        android:id="@+id/start_time"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+                android:inputType="number"
+        android:background="@drawable/buttonbg"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/copy"
+                android:layout_toLeftOf="@+id/paste"
+                android:layout_toStartOf="@+id/paste" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="37.5dp"
+        android:text="End time"
+        android:id="@+id/end_time"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:clickable="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:background="@drawable/buttonbg"
+        android:layout_alignTop="@+id/to_head"
+        android:layout_toRightOf="@+id/paste"
+        android:layout_toEndOf="@+id/paste" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:id="@+id/to_head"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/start_time"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/start_time" />
+
+
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="37.5dp"
+        android:text="Subject:"
+        android:textSize="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:id="@+id/column1_head"
+        android:clickable="true"
+        android:background="@drawable/buttonbg"
+        android:gravity="center"
+        android:layout_below="@+id/end_time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:id="@+id/etsubject"
+        android:singleLine="true"
+        android:textSize="17dp"
+        android:layout_alignTop="@+id/column1_head"
+        android:layout_toRightOf="@+id/column1_head"
+        android:layout_toEndOf="@+id/column1_head" />
+
+    <TextView
+        android:id="@+id/column2_head"
+        android:layout_width="90dp"
+        android:layout_height="37.5dp"
+        android:text="Teacher:"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:layout_below="@+id/etsubject"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/buttonbg"
+        android:gravity="center" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:singleLine="true"
+        android:id="@+id/etteacher"
+        android:textSize="17dp"
+        android:layout_alignTop="@+id/column2_head"
+        android:layout_toRightOf="@+id/column2_head"
+        android:layout_toEndOf="@+id/column2_head" />
+
+    <TextView
+        android:id="@+id/column3_head"
+        android:layout_width="90dp"
+        android:layout_height="37.5dp"
+        android:text="Room:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:layout_below="@+id/etteacher"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/buttonbg"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:id="@+id/etroom"
+        android:singleLine="true"
+        android:textSize="17dp"
+        android:layout_alignTop="@+id/column3_head"
+        android:layout_toRightOf="@+id/column3_head"
+        android:layout_toEndOf="@+id/column3_head" />
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="38dp"
+        android:text="Paste"
+        android:id="@+id/paste"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/delete"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="38dp"
+        android:text="Clear"
+        android:id="@+id/delete"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/etsubject"
+        android:layout_alignEnd="@+id/etsubject" />
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="38dp"
+        android:text="Copy"
+        android:id="@+id/copy"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/paste"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

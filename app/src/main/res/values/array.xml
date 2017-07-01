@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <array name="columns">
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+
+
+
+    </array>
+    <array name="values">
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+
+
+
+    </array>
+
+    <array name="colors">
+        <item>Black</item>
+        <item>White</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Red</item>
+
+
+
+    </array>
+    <array name="cvalues">
+        <item>Black</item>
+        <item>White</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Red</item>
+
+
+
+
+    </array>
+
+</resources>
